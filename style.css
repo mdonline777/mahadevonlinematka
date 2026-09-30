@@ -1,0 +1,144 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f3e8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+/* Card Container */
+.card {
+  width: 100%;
+  max-width: 480px; /* Mobile Friendly Layout */
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Header Section */
+.header-section {
+  background: #fdf2f8;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.app-logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.app-title {
+  color: #1e40af;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1d4ed8;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e0e7ff;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  color: #15803d;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-full {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Features Section */
+.features-section {
+  padding: 24px 20px;
+  background-color: #ffffff;
+}
+
+.features-title {
+  text-align: center;
+  color: #1e40af;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Mobile */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.feature-item {
+  background-color: #f8fafc;
+  padding: 14px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  border: 1px solid #f1f5f9;
+}
+
+.feature-item .icon {
+  font-size: 1.1rem;
+}
+
+/* Extra Small Mobile Devices Adjustments */
+@media (max-width: 360px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
